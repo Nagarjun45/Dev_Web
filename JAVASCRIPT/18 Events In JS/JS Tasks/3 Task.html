@@ -1,0 +1,45 @@
+<!--? Create a form with input fields and a submit button. Use JS to validate the form and display an error message if the input is invalid. -->
+
+<!--* Solution -->
+<!-- 1. Need to prevent the default behaviour of submit because wo hamare har clcik pe refersh hota rahega -->
+<!-- 2. Access the values of inputs as blank if any value blank then it will throw an error-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4 id="error"></h4>
+    <form>
+        <input id="inp1" type="text">
+        <input id="inp2" type="text">
+        <input type="submit">
+    </form>
+
+
+    <script>
+        var form = document.querySelector("form");
+        var inp1 = document.querySelector("#inp1");
+        var inp2 = document.querySelector("#inp2");
+        var err = document.querySelector("h4");
+        form.addEventListener("submit",function(ev){
+            ev.preventDefault();
+            // console.log(inp1.value);
+            // console.log(inp2.value);
+
+            if(inp1.value === '' || inp2.value === ''){
+                // console.log("Please Fill the Correct Details");
+                err.textContent="Error,some fields are missing";
+                err.style.color='red';
+            }else{
+                err.textContent='';
+                console.log(inp1.value,inp2.value);
+            }
+        });
+    </script>
+
+</body>
+</html>

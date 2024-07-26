@@ -1,0 +1,91 @@
+.container{
+    border: 2px solid black;
+    background-color: beige;
+    height: 100vh;
+    width: 100vw;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+
+    /* * Flex direction by default row hoti hai but agar hum usko column kar dete hai to hamara main axis vertical aur cross axis horizontal ho jayega */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+
+    /* * Agar hame flex items ko without squeeze show karna hai to hum flex wrap ka use karte hai and flex-wrap:nowrap by default hota hai */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap;SS */
+    /* flex-wrap: wrap-reverse; */
+
+    /* * flex-flow is the shorthand property for flex-direction and flex-wrap and it's syntax is:- flex-flow: flex-direction flex-wrap|initial|inherit; */
+    /* flex-flow: row wrap; */
+
+    /* * Justify content is used to align items and works according to the main axis or horizontal axis*/
+
+    /* justify-content: center; */
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+
+    /* * Space around mein flex-items apne baju mein equal space leta hai */
+    /* justify-content: space-around; */
+
+    /* * Space-between mein first aur last items chod ke sab items mein space aa jata hai */
+    /* justify-content: space-between; */
+
+    /* * space-evenly mein flex-items apne items ke sath equal space share karta hai */
+    /* justify-content: space-evenly; */
+
+
+    /* * align-items works corresponds to its cross axis or vertical axis */
+    align-items: center;
+    align-items: start;
+    /* align-items: end; */
+    /* align-items: stretch; */
+
+    /* * jab hum flex items mein flex-wrap:wrap; karte hai and jab hum inspectr kar ke items ko squeeze karte hai to items mein kuch jagah bach jati hai bs usse hi manage karne ke liye hum align-content ka use karte hai  */
+
+    /* align-content: flex-start;
+    align-content: flex-end; */
+}
+
+/* * Flex-items properties:- 1. order 2. flex-shrink 3. flex-grow 4. flex-basis 5. align-self */
+/* * When you set flex-grow 1 to every items then items will take entire available space in the container */
+/* * Flex-basis is used to set the initial dimensions of the flex items */
+
+ /*? align-self is used to specifies the alignment in the vertical direction and if we want in horizontal direction we use justify-self/justify-items  */
+.box{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+#box1{
+    background-color: aqua;
+    /* order: 100; */
+    /* flex-shrink: 3; */
+    /* flex-grow: 1; */
+    align-self: center;
+    align-self: end;
+    align-self: start;
+    
+}
+
+#box2{
+    background-color: red;
+    /* flex-grow: 1; */
+    /* flex-basis: 500px; */
+}
+
+#box3{
+    background-color: brown;
+    /* order: -1; */
+    /* flex-shrink: 4; */
+    /* flex-grow: 4; */
+}
+
+#box4{
+    background-color: crimson;
+    /* flex-grow: 1; */
+}

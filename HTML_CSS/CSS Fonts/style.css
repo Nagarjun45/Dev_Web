@@ -1,0 +1,28 @@
+p{
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+    border: 2px solid black;
+
+    /* *Font Color Property */
+    /* color: red; */
+
+    /* * Font family property which changes face of font */
+    /* ? You can add your fonts also */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* * Font Size property */
+    font-size: 25px;
+    /* font-size: small; */
+
+    /* * Font style property */
+    /* font-style: italic; */
+    /* font-style: oblique; */
+    
+    /* * Font Varient Property */
+    /* font-variant: small-caps; */
+    /* font-variant: normal; */
+
+    /* *Font Weight Property shows the boldness and lightness in text (100-900) */
+    /* font-weight: 900; */
+}

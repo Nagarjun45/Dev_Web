@@ -1,0 +1,43 @@
+<!-- ? Event In JS -->
+<!-- * The Actions to which JS can respond are called events. -->
+<!-- * An Event is some notable actions to which a script can respo --> 
+
+<!-- ? Examples:- -->
+<!-- 1. Clicking an element -->
+<!-- 2. Submitting a form -->
+<!-- 3. Scrolling page -->
+<!-- 4. hovering an element and etc... -->
+
+<!-- ? Event Handler -->
+<!-- * Event Handler wo hota hai jo event occur hone ke baad perform hota hai -->
+<!-- * For Ex:- Agar hum submit pe click karte hai to uske baad submit mein jo hona hai uski ko hum event handler kehte ha -->
+
+<!-- ? Examples -->
+<!-- 1. onclick -->
+<!-- 2. ondbclick -->
+<!-- 3. onchange and etc...  -->
+
+<!-- ? Event Binding With HTML -->
+<!--* These Bindings are element attributes, such as onclick and onchange, which can be set equal to JS that is to be executes when the given event occurs at that object.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Binding With HTML Attribute</h1>
+    <!-- <button onclick="alert('Button Clicked')">Click Me</button> -->
+    <button onclick="show();">Click Me</button>
+
+    <script>
+        function show(){
+            alert("Event Passed");
+        }
+    </script>
+</body>
+</html>

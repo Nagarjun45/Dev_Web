@@ -1,0 +1,24 @@
+h1{
+    border: 2px solid black;
+    background-color: antiquewhite;
+
+    /* Apply to all four sides */
+    padding: 1rem;
+
+    /* top and bottom | left and right */
+    /* padding: 5% 10%; */
+
+    /* top | left and right | bottom */
+    /* padding: 1em 2em 2em; */
+
+    /* top | right | bottom | left */
+    /* padding: 5px 1em 0 2em; */
+}
+
+p{
+    border: 2px solid greenyellow;
+    background-color: burlywood;
+    
+
+    padding: 20px;
+}

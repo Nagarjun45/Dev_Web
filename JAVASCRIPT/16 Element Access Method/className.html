@@ -1,0 +1,34 @@
+<!-- ? getElementByClassName() -->
+<!-- * This method returns a collection of elements with a specified class name -->
+<!-- * This method returns an HTML collection -->
+<!-- * This Property is read only -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByClassName()</title>
+</head>
+<body>
+    <h1>getElementByClassName() Method</h1>
+    <div id="show">
+        <p class="geek color">1st p inside div</p>
+        <!-- ? The parameter value "geek color" returns all elements in the document which has both the class name-->
+        <p class="geek">2nd p inside div</p>
+    </div>
+
+    <script>
+        // getElementByCLassName
+        // var getClass = document.getElementsByClassName("geek color");
+        // var getClass = document.getElementsByClassName("geek");
+        // var getClass = document.getElementsByClassName("color");
+        // console.log(getClass);
+
+        var getShow = document.getElementById("show");
+        var result = getShow.getElementsByClassName("geek color");
+        console.log(result);
+    </script>
+</body>
+</html>

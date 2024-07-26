@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.item{
+    background-color: rgb(13, 111, 191);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: rgb(218, 218, 196);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 17px;
+    row-gap: 15px;
+    column-gap: 15px;
+
+    /* * Grid template is used to specify the number of rows and columns */
+    /* grid-template-columns: 100px 100px 100px;  */
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* * repeat() method is used to avoid the repeatation of same values */
+
+    /* grid-template-columns: repeat(3,100px); */
+    /* grid-template-rows: repeat(3,100px); */
+
+    /* ? But if we need 2 items with 100px and 1 item with 200px then we use like */
+
+    /* grid-template-columns: repeat(2,100px) 200px; */
+
+    /* ? If we use px then it is difficult to manage equal space to avoid such situation in responsive website we use fractional unit (fr) */
+
+    /* TODO:- 1fr is the 100% of the available space and they calculate the grid divisions while adjusting for gaps */
+
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    
+
+
+}
+
+
+
+#d1{
+    background-color: coral;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#d2{
+    background-color: cornflowerblue;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#d3{
+    background-color: cyan;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#d4{
+    background-color: blueviolet;
+}
+
+#d5{
+    background-color: darkgoldenrod;
+}
+
+#d6{
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    background-color: white;
+}
+
+.container{
+    width: 300px;
+    height: 600px;
+    background-color: burlywood;
+    margin: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    background-color: red;
+    /* * It's Relative to parent aur parent hamara container hai */
+    /* * Top, right, left and bottom box ke nusar move karta hai aur relatively parent ke anusar move hota hai */
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.green{
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.blue{
+    background-color: blue;
+    /* * It works Relative to viewport and the Top,Right,Bottom and Left properties are used to position the element*/
+    position: fixed;
+    top: 200px;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.purple{
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 50px;
+}
+
+.container2{
+    background-color: blueviolet;
+    height: 600px;
+    width: 300px;
+    margin: 100px;
+  
+}

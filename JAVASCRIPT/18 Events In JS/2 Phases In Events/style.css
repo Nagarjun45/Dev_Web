@@ -1,0 +1,30 @@
+#one{
+    height: 400px;
+    width: 400px;
+    background-color: orange;
+}
+
+#two{
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+}
+
+#three{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+}
+
+#four{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+
+
+#mylink{
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}

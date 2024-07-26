@@ -1,0 +1,93 @@
+/* * Border style */
+
+h1{
+    text-align: center;
+    border-style: solid;
+    /* border-style: dashed;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge; */
+
+/* top and bottom | left and right */
+    /* border-style: dotted solid; */
+
+/* top | left and right | bottom */
+    /* border-style: hidden double dashed; */
+
+/* top | right | bottom | left */
+    /* border-style: none solid dotted dashed; */
+}
+
+
+
+/* * Border Width */
+
+h1{
+    /* Keyword values */
+    /* border-width: thin; */
+    /* border-width: medium; */
+    border-width: thick;
+
+    /* <length> values */
+    /* border-width: 4px; */
+    /* border-width: 1.2rem; */
+
+    /* top and bottom | left and right */
+    /* border-width: 2px 1.5em; */
+
+    /* top | left and right | bottom */
+    /* border-width: 1px 2em 1.5cm; */
+
+    /* top | right | bottom | left */
+    /* border-width: 1px 2em 0 4rem; */
+}
+
+
+/* * Border Style Properties */
+
+h1{
+    /* Keyword values */
+    /* border-style: none; */
+    /* border-style: hidden; */
+    /* border-style: dotted; */
+    /* border-style: dashed; */
+    border-style: solid;
+    /* border-style: double; */
+    /* border-style: groove; */
+    /* border-style: ridge; */
+    /* border-style: inset; */
+    /* border-style: outset; */
+
+    /* top and bottom | left and right */
+    /* border-style: dotted solid; */
+
+    /* top | left and right | bottom */
+    /* border-style: hidden double dashed; */
+
+    /* top | right | bottom | left */
+    /* border-style: none solid dotted dashed; */
+}
+
+
+/* * Border Color properties */
+
+h1{
+    /* <color> values */
+    border-color: red;
+
+    /* top and bottom | left and right */
+    /* border-color: red #f015ca; */
+
+    /* top | left and right | bottom */
+    /* border-color: red rgb(240 30 50 / 70%) green; */
+
+    /* top | right | bottom | left */
+    /* border-color: red yellow green blue; */
+
+}
+
+/* *Border Shorthand Property */
+
+h1{
+    border: 2px solid green;
+}

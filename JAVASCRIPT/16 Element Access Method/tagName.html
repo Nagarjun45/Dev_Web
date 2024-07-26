@@ -1,0 +1,65 @@
+<!-- ? getElementByTagName() -->
+<!-- * It returns a collection of all elements with a specified tag name  -->
+<!-- * This Methods returns an HTML collection Object -->
+<!-- * getElementByTagName("*") returns all elements in the document.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
+</head>
+<body>
+    <h1>getElementByTagName() Method</h1>
+    <h2>I am Nagarjun</h2>
+    <p>Hello Everyon</p>
+    <p id="find">BYE BYE GUYS</p>
+
+    <div id="bhai">
+        <p id="geek">Lorem ipsum dolor sit amet.</p>
+        <p id="two">Second Para</p>
+    </div>
+
+
+    <script>
+        // getElementByTagName()
+        // var result = document.getElementsByTagName("p");
+        // var result = document.getElementsByTagName("*");
+
+        // TO know tags in particular element
+
+        // var result = document.body.getElementsByTagName("*"); //In Body
+
+        // var result = document.body.div.getElementsByTagName("*"); //Isme nahi milega
+        // console.log(result);
+
+
+        // var getBhai = document.getElementById("bhai");
+        // var getGeek = getBhai.getElementsByTagName("p");
+        // console.log(getGeek);
+
+        // TO get Length 
+
+        // var len = document.getElementsByTagName("*").length;
+        // document.write(len);
+        // console.log(len);
+
+        // To get Index numbers
+
+        // var ind = document.getElementsByTagName("*")[10];
+        // document.write(ind);
+        // console.log(ind);
+
+        // To get all by using loop
+
+        var len = document.getElementsByTagName("p").length;
+        for (let i=0; i<len; i++){
+            var res = document.getElementsByTagName("p")[i];
+            console.log(res);
+            // document.write(res + "<br>");
+        }
+        
+    </script>
+</body>
+</html>

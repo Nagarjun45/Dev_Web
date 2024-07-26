@@ -1,0 +1,29 @@
+<!--? Inner HTML  -->
+<!--* The innerHTML property sets or returns the HTML content (inner HTML) of an element.  -->
+<!--* Setting the value of inner html lets you easily replace the exisiting content of an element with new content -->
+<!-- ! Syntax -->
+<!--* element.innerHTML :-returns the inner html property -->
+<!--* element.innerHTML = text :-Set the innerHTML property  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <script>
+        var u = document.getElementById("myul");
+        u.innerHTML="<li>HTML</li><li>CSS</li><li>JavaScript</li>"
+        // console.log(u.innerHTML);
+    </script>
+</body>
+</html>

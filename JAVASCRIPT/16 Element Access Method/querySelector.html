@@ -1,0 +1,38 @@
+<!--? querySelector() Method -->
+<!--* This Method returns the first element that matches a css selector  -->
+<!--* If selector is invalid then it will throw a SYNTAX_ERR Exception  -->
+<!--* If no matches are found, null is returned -->
+<!--* First Come First Get  -->
+<!-- ! Syntax -->
+<!--* document.querySelector(css selectors)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector()</title>
+</head>
+<body>
+    <h1>querySelector() Method</h1>
+    <h2 class="show">Ye Mast Hai</h2>
+    <div id="container">
+        <p class="show1">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p class="show">Hey Everyone</p>
+    <p class="deom1">Hey Bye Everyone</p>
+
+    <script>
+        // querySelector()
+        // var res = document.querySelector("p,h1");
+        // var res = document.querySelector("#container");
+        var res = document.querySelector(".show");
+        console.log(res);
+
+        // querySelectorAll() returns node list i.e. all element which we want to access
+
+        var result = document.querySelectorAll("p");
+        console.log(result);
+    </script>
+</body>
+</html>

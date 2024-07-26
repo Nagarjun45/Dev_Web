@@ -1,0 +1,126 @@
+<!-- ? Phases In JS -->
+<!--* Bubbling Phase:- Bottom to Top i.e. Child to its parents  -->
+<!--* Capturing Phase:- Top to Bottom i.e. Parent to its Child -->
+
+<!-- ? Event Methods -->
+<!--* stopPropagation():- Prevents futhur propagation of current event in the bubbling and capturing phase -->
+
+<!--* stopImmediatePropagation():- Prevents other listeners of the same event from being called -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event bubbling and Capturing Phase</h1>
+
+    <div id="one" data-name="1">1
+        <div id="two" data-name="2">2
+            <div id="three" data-name="3">3
+                <div id="four" data-name="4">4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mylink">
+        <a href="https://www.google.co.in/">Google Ki Link</a>
+    </div>
+
+
+    <script>
+        // Bubbling Phase (Bottom To Top i.e. Child to its parents)
+
+        // document.getElementById("one").addEventListener("click",()=>{console.log("1");},false);
+        // document.getElementById("two").addEventListener("click",()=>{console.log("2");},false);
+        // document.getElementById("three").addEventListener("click",()=>{console.log("3");},false);
+        // document.getElementById("four").addEventListener("click",()=>{console.log("4");},false);
+
+        // Capturing Phase (Top To Bottom i.e. Parent to its childs)
+
+        // document.getElementById("one").addEventListener("click",()=>{console.log("1");},true);
+        // document.getElementById("two").addEventListener("click",()=>{console.log("2");},true);
+        // document.getElementById("three").addEventListener("click",()=>{console.log("3");},true);
+        // document.getElementById("four").addEventListener("click",()=>{console.log("4");},true);
+
+        // Target Vs Current Target 
+
+        // document.getElementById("one").addEventListener("click",(e)=>{
+        //     console.log("1");
+        //     console.log('Target ='+e.target.dataset.name);
+        //     console.log('CurrentTarget ='+e.currentTarget.dataset.name);
+        // });
+
+        // document.getElementById("two").addEventListener("click",(e)=>{
+        //     console.log("2");
+        //     console.log('Target ='+e.target.dataset.name);
+        //     console.log('CurrentTarget ='+e.currentTarget.dataset.name);
+        // });
+
+        // document.getElementById("three").addEventListener("click",(e)=>{
+        //     console.log("3");
+        //     console.log('Target ='+e.target.dataset.name);
+        //     console.log('CurrentTarget ='+e.currentTarget.dataset.name);
+        // });
+
+        // document.getElementById("four").addEventListener("click",(e)=>{
+        //     console.log("4");
+        //     console.log('Target ='+e.target.dataset.name);
+        //     console.log('CurrentTarget ='+e.currentTarget.dataset.name);
+        // });
+
+
+        // Event Methods
+
+        // function div1(e){
+        //     this.style.backgroundColor='red';
+        //     // e.stopImmediatePropagation();
+        // }
+
+        // function div2(e){
+        //     this.style.backgroundColor='blue';
+        //     e.stopImmediatePropagation();
+        
+        // }
+
+        // function div3(e){
+        //     this.style.backgroundColor='black';
+        //     // e.stopImmediatePropagation();
+        //     this.style.width='250px';
+        // }
+
+        // function div4(e){
+        //     this.style.backgroundColor='purple';
+        // }
+        // var divOne = document.getElementById("one");
+        // var divTwo = document.getElementById("two");
+        // var divThree = document.getElementById("three");
+        // var divFour = document.getElementById("four");
+
+        // divOne.addEventListener("click",div1,false);
+
+        // divTwo.addEventListener("click",div2,false);
+
+        // divThree.addEventListener("click",div3,false);
+
+        // divFour.addEventListener("click",div4,false);
+
+
+        // preventDefault prevent the default behaviour of the element.
+        
+        function stopLink(e) {
+            e.preventDefault();
+        }
+
+        document.getElementById("mylink").addEventListener("click",stopLink,false);
+    </script>
+</body>
+</html>
+
+

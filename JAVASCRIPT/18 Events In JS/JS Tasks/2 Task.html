@@ -1,0 +1,29 @@
+<!--? 2. Create a HTML page with two images and a button. When the button is clicked, swap the source attribute of the image  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="one" src="./Images/image1.jpg" alt="image1" style="width: 200px; height: 200px;">
+    <img id="two" src="./Images/image2.jpg" alt="image2" style="width: 200px; height: 200px;">
+
+    <button id="mybtn">Swap Images</button>
+
+    <script>
+        var img1 = document.querySelector("#one"); 
+        var img2 = document.querySelector("#two");
+        var btn = document.getElementById('mybtn');
+        btn.addEventListener("click",function(){
+            var src1 = img1.src;
+            var src2 = img2.src;
+
+            img1.src = src2;
+            img2.src = src1;
+        });
+    </script>
+</body>
+</html>

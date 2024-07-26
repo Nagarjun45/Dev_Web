@@ -1,0 +1,42 @@
+<!-- ? Event Listners -->
+<!--* Event Listener in JavaScript is a procedure or method executed when any event occurs like a click event. An event is something that occurs in HTML elements.  -->
+
+<!--* An event listener adds a responsive functionality to an element, allowing that element to wait and "listen" for the event to occur. Event listeners are similar to event handlers, but in event listeners, you can add multiple events on a single element.  -->
+
+<!--! Syntax  -->
+
+<!--todo:- object.addEventListener(event_type,function,pahses)  -->
+
+<!-- ? Why should we use addEventListeners over Handlers -->
+ <!--* It allows you to bind the multiple handlers to an object for the same event. -->
+ <!--* It enables you finer-grained control of the phase when the listener is activated (capture or bubbling). -->
+ <!--* It works on any DOM Element, not just HTML elements  -->
+
+<!-- ? Remove Listeners -->
+ <!--* This method is used to remove handlers, with the same arguments given when the event was added  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <h1>Event Listeners</h1>
+    <button id="mybtn">Click Me</button>
+
+    <script>
+        function show(){
+            alert("Bye Bye Guys....Have Fun!")
+        }
+        var btn = document.getElementById("mybtn");
+        // It will not overwrite the exixiting function but it run one by one 
+        btn.addEventListener("click",()=>{alert("How are you guys")});
+        btn.addEventListener("click",()=>{alert("We are all fine !")});
+        btn.addEventListener("click",show);
+        // btn.removeEventListener("click",()=>{alert("We are all fine !")});
+    </script>
+</body>
+</html>
